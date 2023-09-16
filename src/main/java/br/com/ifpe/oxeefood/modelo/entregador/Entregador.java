@@ -1,4 +1,4 @@
-package br.com.ifpe.oxeefood.modelo.cliente;
+package br.com.ifpe.oxeefood.modelo.entregador;
 
 import java.time.LocalDate;
 
@@ -17,14 +17,14 @@ import lombok.Setter;
 
 
 @Entity
-@Table(name = "Cliente")
+@Table(name = "Entregador")
 @Where(clause = "habilitado = true")
 @Builder
 @Getter
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class Cliente extends EntidadeAuditavel  {
+public class Entregador extends EntidadeAuditavel  {
     @Column
    private String nome;
    @Column
@@ -35,5 +35,6 @@ public class Cliente extends EntidadeAuditavel  {
    private String foneCelular;
    @Column
    private String foneFixo;
+
 }
 

@@ -1,4 +1,4 @@
-package br.com.ifpe.oxeefood.api;
+package br.com.ifpe.oxeefood.api.cliente;
 
 import java.time.LocalDate;
 
@@ -24,6 +24,7 @@ public class ClienteRequest {
 
    private String cpf;
 
+   
    private String foneCelular;
 
    private String foneFixo;
