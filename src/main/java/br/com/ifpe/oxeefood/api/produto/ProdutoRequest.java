@@ -1,13 +1,14 @@
 package br.com.ifpe.oxeefood.api.produto;
 
+
 import br.com.ifpe.oxeefood.modelo.produto.Produto;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-@Data
 @Builder
+@Data
 @NoArgsConstructor
 @AllArgsConstructor
 public class ProdutoRequest {

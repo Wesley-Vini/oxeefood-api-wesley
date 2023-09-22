@@ -6,9 +6,9 @@ import javax.persistence.Table;
 
 import org.hibernate.annotations.Where;
 
-import br.com.ifpe.oxeefood.api.produto.ProdutoRequest.ProdutoRequestBuilder;
 import br.com.ifpe.oxeefood.util.entity.EntidadeAuditavel;
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -19,7 +19,7 @@ import lombok.Setter;
 @Where(clause = "habilitado = true")
 @Getter
 @Setter
-
+@Builder
 @AllArgsConstructor
 @NoArgsConstructor
 public class Produto extends EntidadeAuditavel  {
@@ -36,10 +36,5 @@ public class Produto extends EntidadeAuditavel  {
    private String tempoEntregaMinima;
    @Column
    private String tempoEntregaMaxima;
-
-   @Column   private String tem;
-public static ProdutoRequestBuilder builder() {
-    return null;
-}
 
 }

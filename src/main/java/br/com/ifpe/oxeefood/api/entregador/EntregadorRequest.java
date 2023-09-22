@@ -16,26 +16,67 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class EntregadorRequest {
 
-   private String nome;
-    
    
+   private String Nome;
+  
+   private String Cpf;
+   
+   private String Rg;
+
    @JsonFormat(pattern = "dd/MM/yyyy")
-   private LocalDate dataNascimento;
+   private LocalDate DataNascimento;
+  
+   private String FoneCelular;
+  
+   private String FoneFixo;
+    
+   private String QtdEntregasRealizadas;
 
-   private String cpf;
+   
+   private String ValordeFrete;
 
-   private String foneCelular;
+   private String Rua;
 
-   private String foneFixo;
+  
+   private int Numero;
+   
+   private String Bairro;
+
+    
+   private String Cidade;
+
+   
+   private int Cep;
+
+        
+   private int UF;
+    
+    
+   private String Complemento;
+
+
 
    public Entregador build() {
 
        return Entregador.builder()
-               .nome(nome)
-               .dataNascimento(dataNascimento)
-               .cpf(cpf)
-               .foneCelular(foneCelular)
-               .foneFixo(foneFixo)
+               .Nome(Nome)
+               .Cpf(Cpf)
+               .Rg(Rg)
+               .DataNascimento(DataNascimento)
+               .FoneCelular(FoneCelular)
+               .FoneFixo(FoneFixo)
+               .QtdEntregasRealizadas(QtdEntregasRealizadas)
+               .ValordeFrete(ValordeFrete)
+               .Rua(Rua)
+               .Numero( Numero)
+               .Bairro(Bairro)
+               .Cidade(Cidade)
+               .Cep(Cep)
+               .UF( UF)
+               .Complemento(Complemento)
                .build();
    }
 }
+
+
+ 
